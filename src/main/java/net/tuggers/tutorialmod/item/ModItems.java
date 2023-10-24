@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tuggers.tutorialmod.TutorialMod;
+import net.tuggers.tutorialmod.item.custom.FuelItem;
 import net.tuggers.tutorialmod.item.custom.MetalDetectorItem;
 
 public class ModItems {
@@ -23,6 +24,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
+    public static final RegistryObject<Item> PINECONE = ITEMS.register("pinecone",
+            () -> new FuelItem(new Item.Properties(), 100));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

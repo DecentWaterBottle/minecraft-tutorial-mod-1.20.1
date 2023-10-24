@@ -3,6 +3,7 @@
   "item.tutorialmod.raw_sapphire": "Raw Sapphire",
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.strawberry": "Strawberry",
+  "item.tutorialmod.pinecone": "Pinecone",
 
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
   "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
@@ -13,5 +14,5 @@
   "block.tutorialmod.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.tutorialmod.sound_block": "Sound Block",
 
-  "creative.tutorial_tab": "Sapphire Tutorial Tab"
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
