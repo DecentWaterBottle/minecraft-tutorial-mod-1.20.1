@@ -1,0 +1,29 @@
+[24Oct2023 15:35:40.052] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Jack\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, tutorialmod, --all, --output, C:\Users\Jack\Documents\MCModding\Practice 01\src\generated\resources, --existing, C:\Users\Jack\Documents\MCModding\Practice 01\src\main\resources]
+[24Oct2023 15:35:40.056] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.5 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
+[24Oct2023 15:35:40.290] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[24Oct2023 15:35:40.328] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Jack/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[24Oct2023 15:35:40.526] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jack\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.1\cf7ffa37334b68b8b0d92a45cc5222f9c71394b8\javafmllanguage-1.20.1-47.2.1.jar is missing mods.toml file
+[24Oct2023 15:35:40.530] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jack\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.1\c0396469677b986ecb5a9b262f32a7dd4bd9ef1c\lowcodelanguage-1.20.1-47.2.1.jar is missing mods.toml file
+[24Oct2023 15:35:40.532] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jack\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.1\23935fad3965a65e9edd0a5c1c629141cbb873aa\mclanguage-1.20.1-47.2.1.jar is missing mods.toml file
+[24Oct2023 15:35:40.535] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jack\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.1\ca36242b045010330a1cd61cadb3212a0404188\fmlcore-1.20.1-47.2.1.jar is missing mods.toml file
+[24Oct2023 15:35:40.596] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[24Oct2023 15:35:41.517] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Jack\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, tutorialmod, --all, --output, C:\Users\Jack\Documents\MCModding\Practice 01\src\generated\resources, --existing, C:\Users\Jack\Documents\MCModding\Practice 01\src\main\resources]
+[24Oct2023 15:35:41.771] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [tutorialmod]
+[24Oct2023 15:35:44.679] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.1, for MC 1.20.1 with MCP 20230612.114412
+[24Oct2023 15:35:44.682] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.1 Initialized
+[24Oct2023 15:35:44.980] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Jack/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[24Oct2023 15:35:44.980] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Jack/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[24Oct2023 15:35:45.077] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[24Oct2023 15:35:45.104] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 27 ms
+[24Oct2023 15:35:45.104] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[24Oct2023 15:35:45.149] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 44 ms
+[24Oct2023 15:35:45.150] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: tutorialmod
+[24Oct2023 15:35:45.286] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: tutorialmod finished after 135 ms
+[24Oct2023 15:35:45.286] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: tutorialmod
+[24Oct2023 15:35:45.354] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: tutorialmod finished after 68 ms
+[24Oct2023 15:35:45.354] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id tutorialmod
+[24Oct2023 15:35:45.376] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id tutorialmod finished after 20 ms
+[24Oct2023 15:35:45.376] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id tutorialmod
+[24Oct2023 15:35:45.377] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id tutorialmod finished after 0 ms
+[24Oct2023 15:35:45.377] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 300 ms
+[24Oct2023 15:35:45.501] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 122, old count: 63, new count: 123, removed stale: 0, written: 59
