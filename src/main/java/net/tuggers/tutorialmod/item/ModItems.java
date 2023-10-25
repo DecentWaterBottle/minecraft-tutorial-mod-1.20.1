@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tuggers.tutorialmod.TutorialMod;
+import net.tuggers.tutorialmod.block.ModBlocks;
 import net.tuggers.tutorialmod.item.custom.FuelItem;
 import net.tuggers.tutorialmod.item.custom.MetalDetectorItem;
 import net.tuggers.tutorialmod.item.custom.ModArmorItem;
@@ -62,6 +63,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
