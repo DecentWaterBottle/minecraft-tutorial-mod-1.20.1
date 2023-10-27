@@ -49,6 +49,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                         .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
+                        .pattern("  S")
+                        .pattern(" S ")
+                        .pattern("PBP")
+                        .define('S', Items.STICK)
+                        .define('P', Items.HEAVY_WEIGHTED_PRESSURE_PLATE)
+                        .define('B', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                        .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))

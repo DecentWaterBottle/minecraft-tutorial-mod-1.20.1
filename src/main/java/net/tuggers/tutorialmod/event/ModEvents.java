@@ -14,7 +14,9 @@ import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.tuggers.tutorialmod.TutorialMod;
+import net.tuggers.tutorialmod.block.ModBlocks;
 import net.tuggers.tutorialmod.item.ModItems;
+import net.tuggers.tutorialmod.villager.ModVillagers;
 
 import java.util.List;
 
@@ -31,8 +33,6 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 2),
                     new ItemStack(ModItems.STRAWBERRY.get(), 12),
                     10, 8, 0.02f));
-
-
         }
 
         if(event.getType() == VillagerProfession.LIBRARIAN) {
@@ -44,6 +44,22 @@ public class ModEvents {
                     enchantedBook,
                     2, 8, 0.02f));
         }
+
+        if(event.getType() == ModVillagers.SOUND_MASTER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 16),
+                    new ItemStack(ModBlocks.SOUND_BLOCK.get()),
+                    4, 20, 0.02f));
+
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 16),
+                    new ItemStack(ModItems.CORN_SEEDS.get()),
+                    4, 50, 0.02f));
+
+        }
+
     }
 
     @SubscribeEvent

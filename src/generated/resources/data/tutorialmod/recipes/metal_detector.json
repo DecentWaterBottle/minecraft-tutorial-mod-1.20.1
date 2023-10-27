@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tutorialmod:sapphire_block"
+    },
+    "P": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  S",
+    " S ",
+    "PBP"
+  ],
+  "result": {
+    "item": "tutorialmod:metal_detector"
+  },
+  "show_notification": true
+}
