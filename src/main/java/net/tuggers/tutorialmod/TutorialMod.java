@@ -1,5 +1,6 @@
 package net.tuggers.tutorialmod;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,6 +15,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tuggers.tutorialmod.block.ModBlocks;
+import net.tuggers.tutorialmod.entity.ModEntities;
+import net.tuggers.tutorialmod.entity.client.RhinoRenderer;
 import net.tuggers.tutorialmod.item.ModCreativeModeTabs;
 import net.tuggers.tutorialmod.item.ModItems;
 import net.tuggers.tutorialmod.loot.ModLootModifiers;
@@ -42,6 +45,7 @@ public class TutorialMod
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -84,7 +88,7 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
         }
     }
 }

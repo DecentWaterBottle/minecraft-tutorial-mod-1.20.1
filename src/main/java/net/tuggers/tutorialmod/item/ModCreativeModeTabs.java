@@ -63,6 +63,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CORN.get());
 
                         pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
                     })
                     .build());
 
