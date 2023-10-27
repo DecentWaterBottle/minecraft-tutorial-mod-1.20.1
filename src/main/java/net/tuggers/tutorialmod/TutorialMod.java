@@ -17,6 +17,7 @@ import net.tuggers.tutorialmod.block.ModBlocks;
 import net.tuggers.tutorialmod.item.ModCreativeModeTabs;
 import net.tuggers.tutorialmod.item.ModItems;
 import net.tuggers.tutorialmod.loot.ModLootModifiers;
+import net.tuggers.tutorialmod.sound.ModSounds;
 import net.tuggers.tutorialmod.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -40,6 +41,7 @@ public class TutorialMod
 
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
