@@ -53,6 +53,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CORN);
         simpleItem(ModItems.CORN_SEEDS);
 
+        simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
+
 
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
 
@@ -77,6 +79,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
         trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

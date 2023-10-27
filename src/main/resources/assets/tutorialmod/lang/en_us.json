@@ -46,5 +46,8 @@
 
   "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
 
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
