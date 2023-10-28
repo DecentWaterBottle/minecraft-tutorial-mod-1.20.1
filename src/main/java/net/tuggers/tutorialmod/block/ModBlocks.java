@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tuggers.tutorialmod.TutorialMod;
 import net.tuggers.tutorialmod.block.custom.CornCropBlock;
+import net.tuggers.tutorialmod.block.custom.GemPolishingStationBlock;
 import net.tuggers.tutorialmod.block.custom.SoundBlock;
 import net.tuggers.tutorialmod.block.custom.StrawberryCropBlock;
 import net.tuggers.tutorialmod.item.ModItems;
@@ -78,6 +79,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CORN_CROP = BLOCKS.register("corn_crop",
             () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
+            () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
