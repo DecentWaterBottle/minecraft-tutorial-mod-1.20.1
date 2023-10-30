@@ -8,6 +8,7 @@ import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.tuggers.tutorialmod.TutorialMod;
 import net.tuggers.tutorialmod.block.ModBlocks;
+import net.tuggers.tutorialmod.block.custom.ExampleAdvancedBlock;
 import net.tuggers.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -52,6 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STRAWBERRY_SEEDS);
         simpleItem(ModItems.CORN);
         simpleItem(ModItems.CORN_SEEDS);
+//        simpleAdvancedBlockItem(ModBlocks.EXAMPLE_BLOCK_ENTITY);
 
         simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
 
@@ -89,6 +91,13 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(TutorialMod.MOD_ID,"item/" + item.getId().getPath()));
     }
+
+    private ItemModelBuilder simpleAdvancedBlockItem(RegistryObject<ExampleAdvancedBlock> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TutorialMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
 
     public void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(TutorialMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),

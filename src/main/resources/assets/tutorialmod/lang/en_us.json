@@ -22,6 +22,7 @@
   "item.tutorialmod.corn_seeds": "Corn Seeds",
 
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
+  "block.tutorialmod.another_sapphire_block": "Another Block of Sapphire",
   "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
 
   "block.tutorialmod.sapphire_ore": "Sapphire Ore",
@@ -50,7 +51,9 @@
   "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
   "item.tutorialmod.rhino_spawn_egg": "Rhino Spawn Egg",
 
-  "item.tutorialmod.gem_polishing_station": "Gem Polishing Station",
+  "block.tutorialmod.gem_polishing_station": "Gem Polishing Station",
+
+  "block.tutorialmod.example_block_entity": "Incrementer",
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

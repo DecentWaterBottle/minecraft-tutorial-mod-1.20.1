@@ -25,6 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.ANOTHER_SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
 
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
@@ -56,6 +57,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(ModBlocks.GEM_POLISHING_STATION.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_station")));
+
+//        horizontalBlock(ModBlocks.EXAMPLE_BLOCK_ENTITY.get(),
+//                new ModelFile.UncheckedModelFile(modLoc("block/example_block_entity")));
+
+//        simpleBlockWithItem(ModBlocks.EXAMPLE_BLOCK_ENTITY.get(),
+//                new ModelFile.UncheckedModelFile(modLoc("block/example_block_entity")));;
+
+        blockWithItem(ModBlocks.EXAMPLE_BLOCK_ENTITY);
 
     }
 

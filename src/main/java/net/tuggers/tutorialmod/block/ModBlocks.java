@@ -12,10 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tuggers.tutorialmod.TutorialMod;
-import net.tuggers.tutorialmod.block.custom.CornCropBlock;
-import net.tuggers.tutorialmod.block.custom.GemPolishingStationBlock;
-import net.tuggers.tutorialmod.block.custom.SoundBlock;
-import net.tuggers.tutorialmod.block.custom.StrawberryCropBlock;
+import net.tuggers.tutorialmod.block.custom.*;
 import net.tuggers.tutorialmod.item.ModItems;
 import net.tuggers.tutorialmod.sound.ModSounds;
 
@@ -27,6 +24,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> ANOTHER_SAPPHIRE_BLOCK = registerBlock("another_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
@@ -82,6 +82,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
             () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> EXAMPLE_BLOCK_ENTITY = registerBlock("example_block_entity",
+            () -> new ExampleAdvancedBlock(BlockBehaviour.Properties.copy(Blocks.ANVIL)
+                    .strength(5.0f, 15f))
+    );
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

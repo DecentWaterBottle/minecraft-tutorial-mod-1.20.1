@@ -17,6 +17,16 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(GemPolishingStationBlockEntity::new,
                             ModBlocks.GEM_POLISHING_STATION.get()).build(null));
 
+//    public static final RegistryObject<BlockEntityType<ExampleAdvancedBlockEntity>> EXAMPLE_ADVANCED_BLOCK_ENTITY =
+//            BLOCK_ENTITIES.register("example_advanced_block_entity",
+//                    () -> BlockEntityType.Builder.of(ExampleAdvancedBlockEntity::new,
+//                            ModBlocks.EXAMPLE_BLOCK_ENTITY.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<ExampleAdvancedBlockEntity>> EXAMPLE_ADVANCED_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("example_advanced_block_entity", () ->
+                    BlockEntityType.Builder.of(ExampleAdvancedBlockEntity::new,
+                            ModBlocks.EXAMPLE_BLOCK_ENTITY.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
