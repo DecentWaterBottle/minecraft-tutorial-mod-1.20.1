@@ -27,6 +27,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ExampleAdvancedBlockEntity::new,
                             ModBlocks.EXAMPLE_BLOCK_ENTITY.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<ExampleTickingBlockEntity>> EXAMPLE_TICKING_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("example_ticking_block_entity", () ->
+                    BlockEntityType.Builder.of(ExampleTickingBlockEntity::new,
+                            ModBlocks.EXAMPLE_TICKING_BLOCK.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

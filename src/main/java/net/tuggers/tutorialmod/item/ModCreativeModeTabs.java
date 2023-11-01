@@ -68,6 +68,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
                         pOutput.accept(ModBlocks.EXAMPLE_BLOCK_ENTITY.get());
                         pOutput.accept(ModBlocks.ANOTHER_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.EXAMPLE_TICKING_BLOCK.get());
                     })
                     .build());
 

@@ -51,6 +51,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SAPPHIRE_WALL.get());
         this.dropSelf(ModBlocks.GEM_POLISHING_STATION.get());
         this.dropSelf(ModBlocks.EXAMPLE_BLOCK_ENTITY.get());
+        this.dropSelf(ModBlocks.EXAMPLE_TICKING_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));

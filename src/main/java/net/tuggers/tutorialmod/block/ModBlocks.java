@@ -85,8 +85,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EXAMPLE_BLOCK_ENTITY = registerBlock("example_block_entity",
             () -> new ExampleAdvancedBlock(BlockBehaviour.Properties.copy(Blocks.ANVIL)
-                    .strength(5.0f, 15f))
-    );
+                    .strength(5.0f, 15f)));
+
+    public static final RegistryObject<Block> EXAMPLE_TICKING_BLOCK = registerBlock("example_ticking_block",
+            () -> new ExampleTickingBlock(BlockBehaviour.Properties.copy(Blocks.ANVIL)
+                    .strength(5.0f, 15f)));
 
 
 

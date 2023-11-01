@@ -65,6 +65,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 //                new ModelFile.UncheckedModelFile(modLoc("block/example_block_entity")));;
 
         blockWithItem(ModBlocks.EXAMPLE_BLOCK_ENTITY);
+        blockWithItem(ModBlocks.EXAMPLE_TICKING_BLOCK);
 
     }
 
