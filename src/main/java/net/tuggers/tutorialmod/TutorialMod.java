@@ -23,6 +23,7 @@ import net.tuggers.tutorialmod.entity.client.RhinoRenderer;
 import net.tuggers.tutorialmod.item.ModCreativeModeTabs;
 import net.tuggers.tutorialmod.item.ModItems;
 import net.tuggers.tutorialmod.loot.ModLootModifiers;
+import net.tuggers.tutorialmod.render.entity.ThrowableSpearRenderer;
 import net.tuggers.tutorialmod.screen.GemPolishingStationScreen;
 import net.tuggers.tutorialmod.screen.ModMenuTypes;
 import net.tuggers.tutorialmod.sound.ModSounds;
@@ -96,6 +97,7 @@ public class TutorialMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+            EntityRenderers.register(ModEntities.THROWABLE_SPEAR.get(), ThrowableSpearRenderer::new);
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutorialmod:item/example_item_handheld",
+    "scale": [2, 2, 2]
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutorialmod:item/example_item_inventory"
+    },
+    "ground": {
+      "parent": "tutorialmod:item/example_item_inventory"
+    },
+    "fixed": {
+      "parent": "tutorialmod:item/example_item_inventory"
+    },
+    "firstperson_righthand": {
+      "parent": "tutorialmod:item/example_item_handheld",
+      "rotation": [ 0,90, 40 ],
+      "translation": [ 0, 15, 2 ],
+      "scale": [ 2.0, 2.0, 2.0 ]
+    },
+    "thirdperson_righthand": {
+      "parent": "tutorialmod:item/example_item_handheld",
+      "rotation": [ 0, 90, 40 ],
+      "translation": [ 0, 15, 2 ],
+      "scale": [ 2.0, 2.0, 2.0 ]
+    }
+  }
+
+}

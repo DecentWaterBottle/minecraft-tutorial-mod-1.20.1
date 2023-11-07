@@ -12,7 +12,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.tuggers.tutorialmod.sound.ModSounds;
 import net.tuggers.tutorialmod.util.ModTags;
@@ -27,6 +26,7 @@ public class MetalDetectorItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
+        System.out.println("USING METAL DETECTOR");
         if (!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
@@ -59,6 +59,7 @@ public class MetalDetectorItem extends Item {
         return InteractionResult.SUCCESS;
     }
 
+
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.metal_detector.tooltip"));
@@ -73,4 +74,6 @@ public class MetalDetectorItem extends Item {
     private boolean isValuableBlock(BlockState state) {
         return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
+
+
 }

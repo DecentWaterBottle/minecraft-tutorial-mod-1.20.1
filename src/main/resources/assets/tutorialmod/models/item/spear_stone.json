@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutorialmod:item/spear_stone_3d",
+    "scale": [2, 2, 2]
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutorialmod:item/spear_stone_3d"
+    },
+    "ground": {
+      "parent": "tutorialmod:item/spear_stone_3d"
+    },
+    "fixed": {
+      "parent": "tutorialmod:item/spear_stone_3d"
+    },
+    "firstperson_righthand": {
+      "parent": "tutorialmod:item/spear_stone_3d",
+      "rotation": [ 0,90, 40 ],
+      "translation": [ 0, 15, 2 ],
+      "scale": [ 2.0, 2.0, 2.0 ]
+    },
+    "thirdperson_righthand": {
+      "parent": "tutorialmod:item/spear_stone_3d",
+      "rotation": [ 0, 90, 40 ],
+      "translation": [ 0, 15, 2 ],
+      "scale": [ 2.0, 2.0, 2.0 ]
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "throwing": 1
+        },
+        "model": "tutorialmod:item/spear_stone_3d"
+      }
+    ]
+  }
+
+}

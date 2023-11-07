@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
 
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
+                        pOutput.accept(ModItems.EXAMPLE_ITEM.get());
+                        pOutput.accept(ModItems.LARGE_DIAMOND_SWORD.get());
 
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
                         pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
@@ -69,6 +71,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.EXAMPLE_BLOCK_ENTITY.get());
                         pOutput.accept(ModBlocks.ANOTHER_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.EXAMPLE_TICKING_BLOCK.get());
+                        pOutput.accept(ModItems.STONE_SPEAR.get());
+                        pOutput.accept(ModItems.THROWABLE_SPEAR.get());
                     })
                     .build());
 

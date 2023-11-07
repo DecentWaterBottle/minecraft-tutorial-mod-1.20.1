@@ -9,9 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.tuggers.tutorialmod.TutorialMod;
 import net.tuggers.tutorialmod.block.ModBlocks;
 import net.tuggers.tutorialmod.entity.ModEntities;
-import net.tuggers.tutorialmod.item.custom.FuelItem;
-import net.tuggers.tutorialmod.item.custom.MetalDetectorItem;
-import net.tuggers.tutorialmod.item.custom.ModArmorItem;
+import net.tuggers.tutorialmod.item.custom.*;
 import net.tuggers.tutorialmod.sound.ModSounds;
 
 public class ModItems {
@@ -67,6 +65,9 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
@@ -82,6 +83,17 @@ public class ModItems {
     public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c5, new Item.Properties()));
 
+    public static final RegistryObject<Item> LARGE_DIAMOND_SWORD = ITEMS.register("large_diamond_sword",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
+//    public static final RegistryObject<Item> STONE_SPEAR = ITEMS.register("spear_stone",
+//            () -> new SpearStone(Tiers.IRON, 2, -2.2F, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> STONE_SPEAR = ITEMS.register("spear_stone",
+            () -> new SpearStone(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> THROWABLE_SPEAR = ITEMS.register("throwable_spear",
+            () -> new ThrowableSpear(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
